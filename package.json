@@ -1,0 +1,47 @@
+{
+  "name": "invoice-service",
+  "version": "1.0.0",
+  "description": "To make it easy for you to get started with GitLab, here's a list of recommended next steps.",
+  "main": "index.js",
+  "type": "module",
+  "jest": {
+    "testEnvironment": "node",
+    "preset": "@shelf/jest-mongodb"
+  },
+  "scripts": {
+    "start": "node -r dotenv/config src/server.js",
+    "test:invoice": "cross-env NODE_ENV=test node --experimental-vm-modules node_modules/jest/bin/jest.js invoice.test.js --setupFiles dotenv/config --forceExit",
+    "test:pdf": "cross-env NODE_ENV=test node --experimental-vm-modules node_modules/jest/bin/jest.js pdf.test.js --setupFiles dotenv/config --forceExit",
+    "dev": "nodemon --inspect -r dotenv/config src/server.js",
+    "lint": "npx eslint ./src --fix || exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.lnu.se:1dv613/student/da222xg/projects/invoice-service.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@shelf/jest-mongodb": "^2.2.1",
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15",
+    "supertest": "^6.2.2"
+  },
+  "dependencies": {
+    "@lnu/eslint-config": "^1.1.5",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "helmet": "^5.0.2",
+    "http-errors": "^2.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.3",
+    "mongodb-memory-server": "^8.4.2",
+    "mongoose": "^6.2.10",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.7.3",
+    "puppeteer": "^13.7.0"
+  }
+}
