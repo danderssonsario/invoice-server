@@ -1,7 +1,7 @@
 # Resource Service
-Självstående server-del som hanterar resurs i form av fakturor.
+Server application that handles resources as invoices. It serves the client application at: https://github.com/danderssonsario/Invoice/
 
-## Urval av tekniker.
+## Selection of technologies.
 * REST API
 * Express js
 * Puppeteer
@@ -9,15 +9,15 @@ Självstående server-del som hanterar resurs i form av fakturor.
 * jsonwebtoken
 * Jest
 
-## Script
+## Scripts
 ### - npm run start
-Kör node.
+runs node.
 ### - npm run dev
-Kör node med nodemon.
+runs node with nodemon.
 ### - npm run test:pdf
-Kör tester från invoice.test.js
+runs tests in invoice.test.js
 ### - npm run test:invoice
-Kör tester från pdf.test.js
+runs tests in pdf.test.js
 
 
 
